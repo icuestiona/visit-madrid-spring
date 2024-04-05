@@ -6,7 +6,7 @@ body {
 
 nav {
   display: flex;
-  padding: 0.6rem;
+  padding: 0.4rem;
   justify-content: space-between;
   background-color: #056f307a;
   color: white;
@@ -114,4 +114,9 @@ li a:hover {
 
 .footer p {
   font-size: small;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(31, 142, 144);
 }
