@@ -20,6 +20,7 @@ nav {
 ul li {
   list-style-type: none;
 }
+
 li {
   float: left;
 }
@@ -57,7 +58,7 @@ li a:hover {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero h1 {
+.hero-content h1 {
   font-size: 5rem;
   margin-bottom: 0.5rem;
   color: rgb(7, 14, 62);
@@ -66,7 +67,7 @@ li a:hover {
   font-style: normal;
 }
 
-.hero h3 {
+.hero-content h3 {
   font-size: 3rem;
   font-family: "Courgette", cursive;
   font-weight: 600;
@@ -130,31 +131,46 @@ li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
   }
 
-  .navbar a {
-    padding: 10px;
+  nav li {
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
   }
 
   .hero-video {
-    height: 30vh;
+    height: 100vh;
+    margin-bottom: 30px;
+  }
+  .hero-content {
+    top: 50%;
   }
 
-  .hero h1 {
-    font-size: 3rem;
+  #mainTitle {
+    font-size: 2.8rem;
   }
 
-  .hero h2 {
+  .hero-content h3 {
     font-size: 1.5rem;
+    color: rgb(254, 186, 122);
   }
   .container {
     flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #places {
+    text-align: left;
+    font-size: 1.3rem;
   }
 
   .column {
-    flex: 100%;
+    width: 100%;
   }
 
   .gallery img {
